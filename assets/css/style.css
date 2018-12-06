@@ -1,4 +1,19 @@
-.navbar-brand {
-    color: white;
+
+.navbar {
+    font-family: 'Gloria Hallelujah', cursive;
 }
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-text {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 100%; }
+
+body { background-color: #e9ecef; }
