@@ -55,15 +55,22 @@ var updateGuessesLeft = function() {
 
 //logic that determines the outcome of game
 
-if ((userGuess === computerGuesses) && (guessesLeft > 0)) 
+if ((userGuess === computerGuess) && (guessesLeft > 0)) 
 {
     wins++;
     document.querySelector('#wins').innerHTML = "Wins: " + wins;
     alert("The letter to guess is " + letterToGuess);
     reset();
+
+
 }
 
-else if(guessesLeft == 0){ 
+else if ((userGuess !== computerGuess) && (guessesLeft > 0)) {
+    guessesLeft = guessesLeft--;
+}
+
+
+else { 
     losses++;
     document.querySelector('#losses').innerHTML = "Losses: " + losses;
     alert("The letter to guess is " + letterToGuess); 
