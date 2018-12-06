@@ -59,7 +59,7 @@ if ((userGuess === computerGuess) && (guessesLeft > 0))
 {
     wins++;
     document.querySelector('#wins').innerHTML = "Wins: " + wins;
-    alert("The letter to guess is " + letterToGuess);
+    alert("You WIN! The letter to guess was " + letterToGuess +"!");
     reset();
 
 
@@ -73,7 +73,7 @@ else if ((userGuess !== computerGuess) && (guessesLeft > 0)) {
 else { 
     losses++;
     document.querySelector('#losses').innerHTML = "Losses: " + losses;
-    alert("The letter to guess is " + letterToGuess); 
+    alert("You LOSE! The letter to guess was " + letterToGuess +"!"); 
     reset();
 }
   };
