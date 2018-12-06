@@ -12,12 +12,12 @@ var letterToGuess = null;
 //function to run event when computer chooses letter
 
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
+console.log(computerGuess)
 //function to run event when user presses a key
 
 var updateGuessesLeft = function() {
  
-    document.querySelector('#guesses-left').innerHTML = "Guesses left: " + guessesLeft;
+    document.querySelector('#guessesLeft').innerHTML = "Guesses Left: " + guessesLeft;
   };
   
   var updateLetterToGuess = function() {
@@ -26,7 +26,7 @@ var updateGuessesLeft = function() {
   
   var updateGuessesSoFar = function() {
    
-    document.querySelector('#guessed-letters').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
+    document.querySelector('#guessedLetters').innerHTML = "Guesses So Far: " + guessedLetters.join(', ');
   };
   
   var reset = function() {
@@ -58,14 +58,14 @@ var updateGuessesLeft = function() {
 if ((userGuess === computerGuesses) && (guessesLeft > 0)) 
 {
     wins++;
-    document.querySelector('#user-wins').innerHTML = "Wins: " + wins;
+    document.querySelector('#wins').innerHTML = "Wins: " + wins;
     alert("The letter to guess is " + letterToGuess);
     reset();
 }
 
 else if(guessesLeft == 0){ 
     losses++;
-    document.querySelector('#user-losses').innerHTML = "Losses: " + losses;
+    document.querySelector('#losses').innerHTML = "Losses: " + losses;
     alert("The letter to guess is " + letterToGuess); 
     reset();
 }
