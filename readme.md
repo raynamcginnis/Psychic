@@ -1,5 +1,7 @@
 This project is a javascript game that picks a letter at random and then allows the user to guess which letter was chosen. 
 
+Link to project: https://raynamcginnis.github.io/Psychic/
+
 It is part of the University of Denver's Full Stack Coding Bootcamp and was assigned as week 3's homework. 
 
 Homework instructions: 
